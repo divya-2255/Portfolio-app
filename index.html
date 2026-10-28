@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">PORTFOLIO</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Create Your <span>Portfolio</span></h1>
+    <p>Fill in your details below. When you submit, they are saved in the database and shown on the About page.</p>
+  </section>
+
+  <div class="card">
+    <h2>Your Details</h2>
+    <p class="hint">Keep the answers short, clear and true. Fields marked * are required.</p>
+
+    <form id="profileForm">
+      <div class="row">
+        <div><label>Full Name *<input id="name" required placeholder="Divya S."></label></div>
+        <div><label>Headline *<input id="title" required maxlength="80" placeholder="Computer Science Student"></label></div>
+      </div>
+
+      <label>One-line Tagline <small>(optional)</small>
+        <input id="tagline" maxlength="120" placeholder="Beginner developer building strong foundations in web development">
+      </label>
+
+      <label>Professional Summary * <small>(2–3 sentences: who you are, what you are learning, what you want)</small>
+        <textarea id="summary" required maxlength="500" placeholder="I am a motivated student learning web development with HTML, CSS, JavaScript, Node.js and MongoDB. I am eager to learn and to grow through practical projects."></textarea>
+      </label>
+
+      <label>Education <small>(course, college, year)</small>
+        <input id="education" placeholder="Course name, College name, Year">
+      </label>
+
+      <label>Skills * <small>(separate with commas — list only what you can explain)</small>
+        <input id="skills" required placeholder="HTML, CSS, JavaScript, C Programming">
+      </label>
+
+      <label>Languages <small>(comma-separated, e.g. English, Tamil)</small>
+        <input id="languages" placeholder="English, Tamil">
+      </label>
+
+      <label>Interests <small>(comma-separated, 2–4 is enough)</small>
+        <input id="interests" placeholder="Reading, Photography, Coding">
+      </label>
+
+      <label>Projects <small>(one per line: name – what it does)</small>
+        <textarea id="projects" placeholder="Simple Calculator in C – performs basic arithmetic operations"></textarea>
+      </label>
+
+      <label>Certification <small>(optional – name and issuer)</small>
+        <input id="certificate" placeholder="Certificate name – Issuing organisation">
+      </label>
+
+      <div class="row">
+        <div><label>Email *<input id="email" type="email" required placeholder="yourname@email.com"></label></div>
+        <div><label>LinkedIn <small>(optional)</small><input id="linkedin" placeholder="https://linkedin.com/in/username"></label></div>
+      </div>
+
+      <button type="submit">Save &amp; View About Page</button>
+      <button type="button" class="secondary" id="sampleBtn">Fill sample content</button>
+      <p id="status" class="msg"></p>
+    </form>
+  </div>
+
+  <footer>&copy; 2026 Portfolio. All rights reserved.</footer>
+  <script src="home.js"></script>
+</body>
+</html>
